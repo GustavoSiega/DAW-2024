@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores, Atributos, Propriedades e Valores</title>
+
+    <style>
+        /*Por TAG*/
+        p {
+            /*4 formas de colocar cor:
+              - Por nome da cor;
+              - Por RGB (Red, Green, Blue);
+              - Por RGBA (Red, Green, Blue, Alpha), Alpha seria a transparencia;
+              - Por Hexadecimal (ex: #000000 - Preto)
+            */
+            color: red;
+            color: rgb(255, 0, 0);
+            color: rgba(255, 0, 0, 1.0);
+            color: #000000;
+        }
+
+        /*Por Identificação*/
+        #titulo {
+            color: blue;
+        }
+
+        /*Por Classe*/
+        .destaque {
+            color: white;
+        }
+
+        .fundo-preto {	
+            background-color: #000000;
+        }
+
+        /*Por Atributos (TAG)*/
+        /*Com o [type=''] ele espera que seja colocado um atributo em qual deseja colocar a cor, etc...*/
+        input[type="text"] {
+            border: 2px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h3>Tipos de Seletores</h3>
+
+    <h4>Seletor Por TAG</h4>
+    <p>Resultado do seletor por TAG</p>
+
+    <h4>Seletor por Identificação</h4>
+    <p id="titulo">Resultado do seletor por Identificação</p>
+    
+    <h4>Seletor por Classe</h4>
+    <p class="destaque fundo-preto">Resultado do seletor por Classe</p>
+
+    <h4>Seletor por Atributos</h4>
+    <input type="text" placeholder="Campo de texto">
+    <input type="password" placeholder="Campo de senha">
+
+    
+</body>
+</html>
